@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link ref="stylesheet" href="formulario.css">
+    <title>Formulário PW2024</title>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulário de Cadastro</h2>
+        <form action="process_form.php" method="post">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="nome_usuario">Nome de Usuário:</label>
+                <input type="text" id="nome_usuario" name="nome_usuario" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                    <option value="prefiro_nao_dizer">Prefiro não dizer</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+    </div>
+    <br><br> 
+    <footer>
+        <p id="footerp">&copy;2023. Todos os direitos reservados a Susana Muniz </p>
+    </footer>
+
+</body>
+</html>
